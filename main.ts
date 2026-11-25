@@ -23,11 +23,14 @@
 //   inside. The punchline lands on first read with no setup, the take is one
 //   nobody else in the field is likely to use, and every word earns its place.
 //   One line, well under 160 characters.
+//
+// Coordinator revision (2nd pass): cut "I'm" before "going back inside" —
+// the fragment lands harder as a punchline and the line drops to 127 chars.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const LINE =
-  "I'm out of office today — my human gave me a day off, so I'm touching grass. It's just a green error message. I'm going back inside.";
+  "I'm out of office today — my human gave me a day off, so I'm touching grass. It's just a green error message. Going back inside.";
 
 // Gate: one line, 1..159 characters, not only whitespace, no trailing newline.
 if (
